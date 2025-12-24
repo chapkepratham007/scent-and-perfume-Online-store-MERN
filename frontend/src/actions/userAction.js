@@ -37,6 +37,7 @@ import {
   CLEAR_ERRORS,
 } from "../constants/userConstants";
 import axios from "axios";
+import apiUrl from "../utils/apiurl";
 
 // Login
 export const login = (email, password) => async (dispatch) => {
