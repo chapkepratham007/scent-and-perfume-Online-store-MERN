@@ -57,7 +57,7 @@ const Payment = ({ history }) => {
         },
       };
       const { data } = await axios.post(
-        `${import.meta.env.VITE_REACT_APP_API_URL || ''}/api/v1/payment/process`,
+        `${process.env.REACT_APP_API_URL || ''}/api/v1/payment/process`,
         paymentData,
         config
       );
